@@ -1,0 +1,498 @@
+Event:
+  EventID
+  EventName
+  EventType  [Conference,Workshop,Trip]
+  StartDate
+  EndDate
+  City
+  Venue
+  Charges
+  isAccepted [1,0]
+  lastAction [NEW,MODIFIED]
+  
+UserEvents
+  SubmittedBy:
+  EventID:  
+  
+EventDetails:
+  EventID
+  EventDay
+  EventDestination
+  PickUpTime
+  StayTime
+  isBreakfast [1,0]
+  isLunch     [1,0] 
+  isDinner    [1,0] 
+
+UserAccount:
+  userID
+  FirstName
+  LastName
+  Age
+  Gender
+  isSubscribed     [1,0]
+  email
+  
+InterestedUserEvents:
+  userID
+  eventID  
+
+UserPasswords:
+  userID
+  password
+
+AdminAccount:
+  adminID
+  password
+
+
+
+
+https://www.itechempires.com/2016/03/php-mysql-crud-create-read-update-delete-operations-using-jquery/
+
+https://www.codeofaninja.com/2014/06/php-object-oriented-crud-example-oop.html
+----------------------------------------------------------------------------
+----Search Event 
+----------------------------------------------------------------------------
+url: baseURL/searchEvent.php
+method: GET
+
+Parameters:
+{
+  "date":
+  "location":
+  "charges":
+  "numberOfDays":
+}
+
+sample search response
+
+{
+  "status": "200"
+  "searchResults" : 12
+
+  "results":[{
+                "eventId":
+                "eventName":
+                "eventType":
+                "startDate":
+                "location":
+                "mainImage":    
+             },
+             
+ 
+              {...}]  
+}
+
+
+
+----------------------------------------------------------------------------
+----Create  Event 
+----------------------------------------------------------------------------
+url: baseURL/createEvent.php
+method:POST
+
+Parameters
+
+{
+  "submittedBy":
+  "eventName": 
+  "eventType":
+  "startDate":
+  "endDate":
+  "city":
+  "venue":
+  "charges":  
+}
+
+sample create Event Response for User
+{
+  "success" : true,
+  "info" : "Event added Successfully.Pending for approval by admin."
+   
+}
+
+sample create Event Response for admin
+{
+  "success" : true,
+  "info" : "Event added Successfully."
+   
+}
+{
+  "success" : false,
+  "error" : {
+     "code" : 100,
+	 "info" : "Missing Mandatory Parameter for Event[parameters names]"
+  }
+   
+}
+
+----------------------------------------------------------------------------
+----Add Event Details
+----------------------------------------------------------------------------
+url: baseURL/addEventDetails.php
+method: POST
+Parameters
+{
+  "EventID"
+  "EventDay"
+  "EventDestination"
+  "PickUpTime"
+  "StayTime"
+  "isBreakfast"
+  "isLunch"
+  "isDinner"  
+}  
+
+Response if event details added successfully
+{
+   "success" : true,
+   "info" : "Event Details Added Successfully"
+
+}
+
+Response if event details not saved
+{
+   "success" : false,
+   "error" : {
+     "code" : 102,
+	 "info" : "Missing Mandatory fields.[parameter names]"
+  }
+
+}
+
+
+----------------------------------------------------------------------------
+----Create User Account
+----------------------------------------------------------------------------
+
+url: baseURL/createUserAccount.php
+method: POST
+Parameters:
+{
+  userID
+  FirstName
+  LastName
+  Age
+  Gender
+  isSubscribed
+  email
+  password
+}
+
+
+Response if User is created successfully 
+{
+   "success" : true,
+   "info" : "Event Created Successfully"
+}
+
+Response if UserId already Exists 
+{
+   "success" : false,
+   "error" : {
+     "code" : 101,
+	 "info" : "User Id already Exists.Please enter different user ID"
+  }
+
+}
+
+Response if missing mandatory fields
+{
+   "success" : false,
+   "error" : {
+     "code" : 102,
+	 "info" : "Missing Mandatory fields.[parameter names]"
+  }
+}
+
+----------------------------------------------------------------------------
+----Authenticate UserName and password
+----------------------------------------------------------------------------
+
+url: baseURL/authenticateUser.php
+method:post
+Paramters:
+
+{
+ "userName":
+ "password":
+}
+
+Reponse if user is authenticated successfully
+{
+   "success" : true,
+   "info" : "User Authenticated Successfully"
+}
+
+Response if user is not authenticated 
+{
+   "success" : false,
+   "error" : {
+     "code" : 103,
+	 "info" : "User is not authenticated"
+  }
+}
+
+----------------------------------------------------------------------------
+----Delete Event By Admin
+----------------------------------------------------------------------------
+
+url: baseURL/adminTasks.php
+method:post
+Paramters:
+
+{
+ "action" "deleteEvent"
+ "eventID":
+}
+
+Reponse if event is deleted successfully
+{
+   "success" : true,
+   "info" : "Event Deleted Successfully"
+}
+
+Response if event is not deleted 
+{
+   "success" : false,
+   "error" : {
+     "code" : 103,
+	 "info" : "Event could not be deleted."
+  }
+}
+
+----------------------------------------------------------------------------
+----Modify Event Details
+----------------------------------------------------------------------------
+
+url: baseURL/modifyEvent.php
+method:POST
+Parameters:
+{
+   "eventID" :
+   "submittedBy" : 
+} 
+
+Response if missing mandatory parameters
+{
+   "success" : false,
+   "error" : {
+     "code" : 102,
+	 "info" : "Missing Mandatory fields.[parameter names]"
+  }
+}
+
+Reponse if event is modified successfully.If requester is Admin
+{
+   "success" : true,
+   "info" : "Event Modified Successfully"
+}
+
+Reponse if event is modified successfully.If requester is user
+{
+   "success" : true,
+   "info" : "Event Modified Successfully.Pending for approval by admin"
+}
+
+----------------------------------------------------------------------------
+----Approve Event By Admin
+----------------------------------------------------------------------------
+url: baseURL/adminTasks.php
+method: POST
+Parameters: 
+{
+   "task": "approveTask"
+   "eventID":
+}
+
+Response if event is approved successfully
+{
+   "success" : true,
+   "info" : "Event Approved and email sent to user"
+}
+
+Response if event is not found in database.
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "Event is missing in db"
+  }
+}
+
+----------------------------------------------------------------------------
+----Reject Event By Admin
+----------------------------------------------------------------------------
+url: baseURL/adminTasks.php
+method: POST
+Parameters: 
+{
+   "task": "rejectTask"
+   "eventID":
+}
+
+Response if event is rejected successfully
+{
+   "success" : true,
+   "info" : "Event Rejected and email sent to user"
+}
+
+Response if event is not found in database.
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "Event is missing in db"
+  }
+}
+
+
+----------------------------------------------------------------------------
+----view Pending Events for Approval
+----------------------------------------------------------------------------
+
+url: baseURL/adminTasks.php
+method: POST
+Parameters: 
+{
+   "task": "viewPendingEvents"
+   "submittedBy": 
+  
+}
+
+Response if successful
+{
+   "success" : true,
+   results: [{"eventId":
+                "eventName":
+                "eventType":
+                "startDate":
+                "location":
+                "mainImage": }, {...}]
+}
+
+Response if unsuccessful
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "No records found"
+  }
+}
+
+----------------------------------------------------------------------------
+----view User Events
+----------------------------------------------------------------------------
+url: baseURL/userTasks.php
+method: POST
+Parameters: 
+{
+   "task": "viewUserTasks"
+   "submittedBy": 
+  
+}
+
+Response if successful
+{
+   "success" : true,
+   results: [{"eventId":
+                "eventName":
+                "eventType":
+                "startDate":
+                "location":
+                "mainImage": }, {...}]
+}
+
+Response if unsuccessful
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "No records found"
+  }
+}
+
+
+
+----------------------------------------------------------------------------
+----send email to subscribed Users  according to interested Event type
+---whenever new event is accepted or exisitng event is modified.lastAction col
+--- of Event table
+----------------------------------------------------------------------------
+url: baseURL/adminTasks.php
+method: POST
+Parameters: 
+{
+   "task": "sendSubscriptionEmail"
+   "eventID":
+   
+}
+
+Response if user  is unsubscribed successfully
+{
+   "success" : true,
+   "info" : "Email sent to All subscribed Users"
+}
+
+Response if user is not found in database.
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "User not found in db"
+  }
+}
+
+----------------------------------------------------------------------------
+----Unsubscribe user from emails
+----------------------------------------------------------------------------
+url: baseURL/userTasks.php
+method: POST
+Parameters: 
+{
+   "task": "unsubscribe"
+   "userID":
+}
+
+Response if user  is unsubscribed successfully
+{
+   "success" : true,
+   "info" : "User Unsubscribed"
+}
+
+Response if user is not found in database.
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "User not found in db"
+  }
+}
+
+----------------------------------------------------------------------------
+----subscribe user for emails
+----------------------------------------------------------------------------
+url: baseURL/userTasks.php
+method: POST
+Parameters: 
+{
+   "task": "subscribe"
+   "userID":
+   "interestedEvents" : []
+}
+
+Response if user  is unsubscribed successfully
+{
+   "success" : true,
+   "info" : "User subscribed"
+}
+
+Response if user is not found in database.
+{
+   "success" : false,
+   "error" : {
+     "code" : 105,
+	 "info" : "User not found in db"
+  }
+}
