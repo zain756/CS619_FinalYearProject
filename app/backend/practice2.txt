@@ -1,0 +1,147 @@
+$arr = [];
+$arr[] = "a";
+$arr[] = "b";
+$arr[] = "c";
+class  EventDetailsDaywise{
+
+   public $destinationsList;
+   public $pickUptimesList;
+   public $stayTimesList;
+
+}
+
+$eventdaywise = new EventDetailsDaywise();
+$eventdaywise ->destinationsList = [];
+$eventdaywise ->destinationsList[] = "LahoreFort";
+$eventdaywise ->destinationsList[] = "Minar Pakistan";
+$eventdaywise ->destinationsList[] = "Lahore Zoo"; 
+
+$eventdaywise ->pickUptimesList[] = "10am";
+$eventdaywise ->pickUptimesList[] = "12pm";
+$eventdaywise ->pickUptimesList[] = "4pm";
+
+$eventdaywise ->stayTimesList[] = "2 hours";
+$eventdaywise ->stayTimesList[] = "2 hours";
+$eventdaywise ->stayTimesList[] = "4 hours";
+ 
+echo json_encode ($eventdaywise,JSON_FORCE_OBJECT);
+class EventDetail{
+   public $id;
+   public $eventDetailsDaywise;
+}
+
+$eventDet = new EventDetail();
+$eventDet->id = "event1234";
+$eventDet->eventDetailsDaywise = [];
+$eventDet->eventDetailsDaywise[] = $eventdaywise;
+$eventDet->eventDetailsDaywise[] = $eventdaywise;
+
+
+echo "<br>";
+echo json_encode ($eventDet);
+echo "<br>";
+echo "<br>";
+class Event{
+  public $name;
+  public $id;
+  public $eventDetailList;
+  
+}
+
+$event = new Event();
+$event->name = "LahoreTrip";
+$event->id = "event1234";
+$event->eventDetailList = [];
+$event->eventDetailList[] = $eventDet;
+$event->eventDetailList[] = $eventDet;
+
+
+echo json_encode ($event,JSON_FORCE_OBJECT);
+
+-------------------------------------
+
+
+{
+   "name": "LahoreTrip",
+   "id": "event1234",
+   "eventDetailList": {
+      "0": {
+         "id": "event1234",
+         "eventDetailsDaywise": {
+            "0": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            },
+            "1": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            }
+         }
+      },
+      "1": {
+         "id": "event1234",
+         "eventDetailsDaywise": {
+            "0": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            },
+            "1": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            }
+         }
+      }
+   }
+}

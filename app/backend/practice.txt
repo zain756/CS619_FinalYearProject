@@ -1,0 +1,65 @@
+///http://www.writephponline.com/
+//echo 'Hello World!';
+$arr = [];
+$arr[] = "a";
+$arr[] = "b";
+$arr[] = "c";
+//echo $arr;
+class test{
+  public $a;
+  public $b;
+  public $lst;
+  
+}
+
+$t = new test();
+$t->a = "abc";
+$t->b = 111;
+$t->lst = [];
+$t->lst[]= "a";
+$t->lst[]= "b";
+$t->lst[]= "c";
+
+echo json_encode ($t->lst);
+echo "<br>";
+echo json_encode ($t,JSON_FORCE_OBJECT);
+--OUTPUT---
+["a","b","c"]
+{"a":"abc","b":111,"lst":{"0":"a","1":"b","2":"c"}}
+
+
+-------------------------------------------------------
+//echo 'Hello World!';
+$arr = [];
+$arr[] = "a";
+$arr[] = "b";
+$arr[] = "c";
+//echo $arr;
+
+class EventDetail{
+   public $id;
+   public $lst;
+}
+
+$eventDet = new EventDetail();
+$eventDet->id = "event1234";
+$event->lst = [];
+$event->lst[] = "lahore";
+$event->lst[] = "karachi";
+
+
+class Event{
+  public $name;
+  public $id;
+  public $eventDetailList;
+  
+}
+
+$event = new Event();
+$event->name = "LahoreTrip";
+$event->id = "event1234";
+$event->eventDetailList = $eventDet;
+
+echo json_encode ($eventDet,JSON_FORCE_OBJECT);
+echo "<br>";
+echo json_encode ($event,JSON_FORCE_OBJECT);
