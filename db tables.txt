@@ -31,11 +31,14 @@ UserAccount:
   Age
   Gender
   isSubscribed     [1,0]
+  subscriptionInterests  [Conference,Workshop,Trip]
   email
   
-InterestedUserEvents:
+UserInterestedEvents:
   userID
   eventID  
+  
+  
 
 UserPasswords:
   userID
