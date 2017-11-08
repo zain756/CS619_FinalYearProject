@@ -1,4 +1,8 @@
 ///http://www.writephponline.com/
+https://stackoverflow.com/questions/18866571/receive-json-post-with-php
+http://www.iminfo.in/post/post-json-postman-rest-client-chrome
+https://stackoverflow.com/questions/39008071/send-post-data-via-raw-json-with-postman
+
 //echo 'Hello World!';
 $arr = [];
 $arr[] = "a";
