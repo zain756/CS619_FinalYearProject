@@ -1,0 +1,92 @@
+{"name":"LahoreTrip","id":"event1234","eventDetailList":[{"id":"event1234","eventDetailsDaywise":[{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]},{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]}]},{"id":"event1234","eventDetailsDaywise":[{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]},{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]}]}]}
+
+
+
+
+
+
+
+{
+   "name": "LahoreTrip",
+   "id": "event1234",
+   "eventDetailList": [
+      {
+         "id": "event1234",
+         "eventDetailsDaywise": [
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            },
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            }
+         ]
+      },
+      {
+         "id": "event1234",
+         "eventDetailsDaywise": [
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            },
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            }
+         ]
+      }
+   ]
+}

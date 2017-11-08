@@ -56,7 +56,7 @@ $event->eventDetailList[] = $eventDet;
 $event->eventDetailList[] = $eventDet;
 
 
-echo json_encode ($event,JSON_FORCE_OBJECT);
+echo json_encode ($event);
 
 -------------------------------------
 
@@ -145,3 +145,98 @@ echo json_encode ($event,JSON_FORCE_OBJECT);
       }
    }
 }
+
+-------------array form
+{
+   "name": "LahoreTrip",
+   "id": "event1234",
+   "eventDetailList": [
+      {
+         "id": "event1234",
+         "eventDetailsDaywise": [
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            },
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            }
+         ]
+      },
+      {
+         "id": "event1234",
+         "eventDetailsDaywise": [
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            },
+            {
+               "destinationsList": [
+                  "LahoreFort",
+                  "Minar Pakistan",
+                  "Lahore Zoo"
+               ],
+               "pickUptimesList": [
+                  "10am",
+                  "12pm",
+                  "4pm"
+               ],
+               "stayTimesList": [
+                  "2 hours",
+                  "2 hours",
+                  "4 hours"
+               ]
+            }
+         ]
+      }
+   ]
+}
+
+
+
+-----------------------------------------------------
+echo 'Hello World!';
+$json = '{"name":"LahoreTrip","id":"event1234","eventDetailList":[{"id":"event1234","eventDetailsDaywise":[{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]},{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]}]},{"id":"event1234","eventDetailsDaywise":[{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]},{"destinationsList":["LahoreFort","Minar Pakistan","Lahore Zoo"],"pickUptimesList":["10am","12pm","4pm"],"stayTimesList":["2 hours","2 hours","4 hours"]}]}]}';
+
+$y = json_decode($json,false);
+echo $y->eventDetailList[0]->eventDetailsDaywise[0]->destinationsList[0];

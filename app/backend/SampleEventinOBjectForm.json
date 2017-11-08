@@ -1,0 +1,84 @@
+{
+   "name": "LahoreTrip",
+   "id": "event1234",
+   "eventDetailList": {
+      "0": {
+         "id": "event1234",
+         "eventDetailsDaywise": {
+            "0": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            },
+            "1": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            }
+         }
+      },
+      "1": {
+         "id": "event1234",
+         "eventDetailsDaywise": {
+            "0": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            },
+            "1": {
+               "destinationsList": {
+                  "0": "LahoreFort",
+                  "1": "Minar Pakistan",
+                  "2": "Lahore Zoo"
+               },
+               "pickUptimesList": {
+                  "0": "10am",
+                  "1": "12pm",
+                  "2": "4pm"
+               },
+               "stayTimesList": {
+                  "0": "2 hours",
+                  "1": "2 hours",
+                  "2": "4 hours"
+               }
+            }
+         }
+      }
+   }
+}

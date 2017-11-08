@@ -1,5 +1,5 @@
 <?php
-	class Event{
+class Event{
 		
 		private $eventID;
 		private $eventName;
@@ -13,15 +13,15 @@
 		private $eventDetailList         //eventDetail object
 		
 		function __construct(){
-			$this->$eventDetailList = new Array();
-			$this->$eventName = $name;
-			$this->$eventType = $type;
-			$this->$startDate = $startDate;
-			$this->$endDate = $endDate;
-			$this->$city = $city;
-			$this->$venue = $venue;
-			$this->$charges = $charges;
-			$this->$lastAction = "NEW";
+			$this->eventDetailList = new Array();
+			$this->eventName = $name;
+			$this->eventType = $type;
+			$this->startDate = $startDate;
+			$this->endDate = $endDate;
+			$this->city = $city;
+			$this->venue = $venue;
+			$this->charges = $charges;
+			$this->lastAction = "NEW";
 		}
 		
 		public function getEventById ($eventID){
@@ -34,10 +34,12 @@
 			return $this->eventDetailList;
 		
 		
-		public function setLastAction
+		public function setLastAction($act){
+			$this->lastAction = $act;
+		}
 		
 		
 		
-	}
+}
 
 ?>

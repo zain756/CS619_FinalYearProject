@@ -6,42 +6,42 @@
 		private $stayTimesList;
 		
 		function __construct (){
-			$this->$eventID = $eventID;
-			$this->$destinationsList = new Array();
-			$this->$pickUpTimesList = new Array();
-			$this->$stayTimesList = new Array();
+			$this->eventID = $eventID;
+			$this->destinationsList = new Array();
+			$this->pickUpTimesList = new Array();
+			$this->stayTimesList = new Array();
 			
 		}
 		
 		public function setEventID ($id){
-			$this->$eventID = $id;
+			$this->eventID = $id;
 		}
 	     
 		public function setDestinationsList ($dest){
-			$this->$destinationsList[] = $dest;
+			$this->destinationsList[] = $dest;
 		} 
 		
 		public function setDestinationsList ($dest){
-			$this->$destinationsList[] = $dest;
+			$this->destinationsList[] = $dest;
 		}
         public function setpickUpTimesList ($time){
-			$this->$pickUpTimesList[] = $time;
+			$this->pickUpTimesList[] = $time;
 		}		
 		public function setstayTimesList ($time){
-			$this->$stayTimesList[] = $time;
+			$this->stayTimesList[] = $time;
 		}
 		public function getDestinationsList (){
-			return $this->$destinationsList;
+			return $this->destinationsList;
 		} 
 		
 		public function getDestinationsList (){
-			return $this->$destinationsList;
+			return $this->destinationsList;
 		}
         public function getpickUpTimesList (){
-			return $this->$pickUpTimesList;
+			return $this->pickUpTimesList;
 		}		
 		public function getstayTimesList (){
-			return $this->$stayTimesList;
+			return $this->stayTimesList;
 		}
 		
 	}
