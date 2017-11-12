@@ -1,0 +1,479 @@
+{
+	"id": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+	"name": "EIMS project",
+	"description": "Events Information Management system api",
+	"order": [
+		"aa33106e-e985-2393-c691-8f4dfb7fd2a4",
+		"98078f88-e176-677c-f71b-a5cc33c925fd",
+		"435eb506-cecd-d0df-8fb2-af566e1f1873",
+		"43bbfc87-7911-ee87-3d17-825a39bd3376",
+		"06af313d-f642-9e0f-952c-dcb3caab2fa5",
+		"6d9fbbd4-fceb-b79f-190b-e53a17fd2eaa",
+		"3be60a36-6343-274c-8c0d-c8471e4802c3",
+		"3072d813-7efe-32a6-b0bc-4c73c9f6ccad",
+		"3c86ede9-b3e1-f689-0855-18fd4622ea95",
+		"08c3f2de-4b65-08ac-b00f-d6bd1214ad51",
+		"c24b16f5-5339-913f-b7b3-33edd44aaa7c",
+		"42daee7b-3943-94bc-127e-aa32c464f0bb",
+		"80be8070-98e4-a985-6936-78c05428c99a",
+		"a6f6abbb-8c1f-9008-1222-823036b0cae7",
+		"03bdd7b8-e30b-db07-026e-d15b76a9e357"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1510247250821,
+	"owner": "1372749",
+	"public": false,
+	"requests": [
+		{
+			"id": "03bdd7b8-e30b-db07-026e-d15b76a9e357",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312332341,
+			"name": "SEND_EVENT_NOTIFICATION",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"sendStatusEmailToCreater\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n     \"eventID\": \"1\"\n   }\n}"
+		},
+		{
+			"id": "06af313d-f642-9e0f-952c-dcb3caab2fa5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312389001,
+			"name": "CREATE USER ACCOUNT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"createUserAccount\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"firstName\": \"zain\",\n      \"lastName\": \"ul abdeen\",\n      \"gender\": \"male\",\n      \"age\": \"27\",\n      \"email\": \"zain.ul.abdeen113@gmail.com\",\n      \"mobileNumber\": \"03434527485\",\n      \"password\": \"zain\"\n     \n   }\n}"
+		},
+		{
+			"id": "08c3f2de-4b65-08ac-b00f-d6bd1214ad51",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510311837552,
+			"name": "VERIFY_USER_ACCOUNT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"verfiyUserAccount\",\n   \"userName\": \"zain\",\n   \"password\": \"abc\"\n   \n}"
+		},
+		{
+			"id": "3072d813-7efe-32a6-b0bc-4c73c9f6ccad",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510311860681,
+			"name": "PENDING_EVENT_ADMIN",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"pendingEvent\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"eventID\": \"event1234\"\n   }\n}"
+		},
+		{
+			"id": "3be60a36-6343-274c-8c0d-c8471e4802c3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510311396186,
+			"name": "REJECT_EVENT_ADMIN",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"rejectEvent\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"eventID\": \"event1234\"\n   }\n}"
+		},
+		{
+			"id": "3c86ede9-b3e1-f689-0855-18fd4622ea95",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510311863682,
+			"name": "SEARCH_EVENT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"searchEvent\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"startDate\" : \"05/18/2017 00:00:00\",\n      \"city\" : \"Lahore\",\n      \"charges\" : 1000,\n      \"numberOfDays\" : 3\n   }\n}"
+		},
+		{
+			"id": "42daee7b-3943-94bc-127e-aa32c464f0bb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312131264,
+			"name": "SUBSCRIBE_TO_EMAILS",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"subscribeToEmails\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n     \"isSubscribe\": \"1\"\n   }\n}"
+		},
+		{
+			"id": "435eb506-cecd-d0df-8fb2-af566e1f1873",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312375309,
+			"name": "DELETE_EVENT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"deleteEvent\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"eventID\": \"event1234\"\n   }\n}"
+		},
+		{
+			"id": "43bbfc87-7911-ee87-3d17-825a39bd3376",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312381744,
+			"name": "MODIFY EVENT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"modifyEvent\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"eventID\": \"event1234\",\n      \"name\": \"Lahore Trip\",\n      \"eventType\": \"Trip\",\n      \"startDate\": \"2015/05/18 00:00:00\",\n      \"endDate\": \"2015/05/18 00:00:00\",\n      \"city\": \"Lahore\",\n      \"venue\": \"Horizon Tours Model Town Lahore\",\n      \"charges\": 1000,\n      \"status\": \"NEW\",\n      \"submittedBy\": \"user1234\",\n      \"eventDetailsDaywise\": [\n         {\n            \"isBreakfast\": \"1\",\n            \"isLunch\": \"1\",\n            \"isDinner\": \"1\",\n            \"destinationsList\": [\n               \"Lahore Fort\",\n               \"Minar Pakistan\",\n               \"Lahore Zoo\"\n            ],\n            \"pickUptimesList\": [\n               \"10am\",\n               \"12pm\",\n               \"4pm\"\n            ],\n            \"stayTimesList\": [\n               \"2 hours\",\n               \"2 hours\",\n               \"4 hours\"\n            ]\n         },\n         {\n            \"isBreakfast\": \"1\",\n            \"isLunch\": \"0\",\n            \"isDinner\": \"1\",\n            \"destinationsList\": [\n               \"Model Town Park\",\n               \"Safari Park\",\n               \"Expo Center\"\n            ],\n            \"pickUptimesList\": [\n               \"9am\",\n               \"11pm\",\n               \"5pm\"\n            ],\n            \"stayTimesList\": [\n               \"4 hours\",\n               \"6 hours\",\n               \"1 hours\"\n            ]\n         }\n      ]\n   }\n}"
+		},
+		{
+			"id": "6d9fbbd4-fceb-b79f-190b-e53a17fd2eaa",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510311342731,
+			"name": "ACCEPT_EVENT_ADMIN",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"acceptEvent\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"eventID\": \"event1234\"\n   }\n}"
+		},
+		{
+			"id": "80be8070-98e4-a985-6936-78c05428c99a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312237321,
+			"name": "UNSUBSCRIBE_TO_EMAILS",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"subscribeToEmails\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n     \"isSubscribe\": \"0\"\n   }\n}"
+		},
+		{
+			"id": "98078f88-e176-677c-f71b-a5cc33c925fd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510394752742,
+			"name": "GET_EVENT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"getEvent\",\n   \"userName\": \"zain756\",\n   \"userclass\": \"users\",\n   \"password\": \"abc\",\n   \"data\": {\n     \"eventID\" : \"event1234\"\n   }\n}"
+		},
+		{
+			"id": "a6f6abbb-8c1f-9008-1222-823036b0cae7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312269278,
+			"name": "SEND_STATUS_EMAIL_TO_CREATER",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"sendStatusEmailToCreater\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n     \"eventID\": \"1\"\n   }\n}"
+		},
+		{
+			"id": "aa33106e-e985-2393-c691-8f4dfb7fd2a4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510312366717,
+			"name": "CREATE_EVENT",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"createUserAccount\",\n   \"userName\": \"admin\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"name\": \"Lahore Trip\",\n      \"eventType\": \"Trip\",\n      \"startDate\": \"2015/05/18 00:00:00\",\n      \"endDate\": \"2015/05/18 00:00:00\",\n      \"city\": \"Lahore\",\n      \"venue\": \"Horizon Tours Model Town Lahore\",\n      \"charges\": 1000,\n      \"status\": \"NEW\",\n      \"submittedBy\": \"user1234\",\n      \"eventDetailsDaywise\": [\n         {\n            \"isBreakfast\": \"1\",\n            \"isLunch\": \"1\",\n            \"isDinner\": \"1\",\n            \"destinationsList\": [\n               \"Lahore Fort\",\n               \"Minar Pakistan\",\n               \"Lahore Zoo\"\n            ],\n            \"pickUptimesList\": [\n               \"10am\",\n               \"12pm\",\n               \"4pm\"\n            ],\n            \"stayTimesList\": [\n               \"2 hours\",\n               \"2 hours\",\n               \"4 hours\"\n            ]\n         },\n         {\n            \"isBreakfast\": \"1\",\n            \"isLunch\": \"0\",\n            \"isDinner\": \"1\",\n            \"destinationsList\": [\n               \"Model Town Park\",\n               \"Safari Park\",\n               \"Expo Center\"\n            ],\n            \"pickUptimesList\": [\n               \"9am\",\n               \"11pm\",\n               \"5pm\"\n            ],\n            \"stayTimesList\": [\n               \"4 hours\",\n               \"6 hours\",\n               \"1 hours\"\n            ]\n         }\n      ]\n   }\n}"
+		},
+		{
+			"id": "c24b16f5-5339-913f-b7b3-33edd44aaa7c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/eims/index.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510408977537,
+			"name": "GET_EVENTS",
+			"description": "create event",
+			"collectionId": "851b853e-2d7c-1623-0c9c-83ac9f405649",
+			"responses": [],
+			"rawModeData": "{\n   \"_action\": \"getManyEvents\",\n   \"userclass\": \"users\",\n   \"userName\": \"zain\",\n   \"password\": \"abc\",\n   \"data\": {\n      \"status\" : \"NEW\"\n   }\n}"
+		}
+	]
+}

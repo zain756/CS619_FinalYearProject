@@ -7,11 +7,11 @@ Event:
   City
   Venue
   Charges
-  isAccepted [1,0]
-  lastAction [NEW,MODIFIED]
+  createdBy
+  status [NEW,PENDING,ACCEPTED, REJECTED, MODIFIED]
   
 UserEvents
-  SubmittedBy:
+  userName:
   EventID:  
   
 EventDetails:

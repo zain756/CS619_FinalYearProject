@@ -1,32 +1,45 @@
 <?php
-	class User{
+//require_once('DBConnection.php');
+
+	class User extends DBConnection{
 		private $event;              //Event class object
 		private $authenAdmin;         //AuthenticateAdmin class object
 		private $userDetail;            //UserDetails object
+		
+		
 	
-		public createUserAccount($userDetail){
+		public function createUserAccount($userDetail){
+			echo  "hello";
+			
 			
 		}
 		
-		public createEvent($event){
+		public function createEvent($event){
 			
 		}
-		private addEventDetails ($eventDetail){
+		
+		public  function getEvent($id){
+			parent::createConnection();
+			
+			//echo "getttt";
 			
 		}
-		public modifyEvent ($event){
+		private function addEventDetails ($eventDetail){
 			
 		}
-		private modifyEventDetails ($event){
+		public function modifyEvent ($event){
 			
 		}
-		public subscribeToEmails ($userId){
+		private function modifyEventDetails ($event){
 			
 		}
-		public unsubscribeToEmails ($userId){
+		public function subscribeToEmails ($userId){
 			
 		}
-		public viewMyEvents (){
+		public function unsubscribeToEmails ($userId){
+			
+		}
+		public function viewMyEvents (){
 			
 			
 		}

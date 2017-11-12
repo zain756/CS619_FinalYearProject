@@ -240,3 +240,23 @@ $json = '{"name":"LahoreTrip","id":"event1234","eventDetailList":[{"id":"event12
 
 $y = json_decode($json,false);
 echo $y->eventDetailList[0]->eventDetailsDaywise[0]->destinationsList[0];
+
+
+----------------------------------------------------
+echo "hello";
+
+class item{
+ public $a; 
+}
+
+$it = new item();
+$it->a = "asdfaf1";
+
+$items = [];
+$items["length"] = 3;
+$items["results"][] = $it;
+$items["results"][] = $it;
+$items["results"][] = $it;
+echo json_encode($items);
+--------------------------------------------------
+{"length":3,"results":[{"a":"asdfaf1"},{"a":"asdfaf1"},{"a":"asdfaf1"}]}

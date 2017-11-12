@@ -7,85 +7,55 @@
 
 
 {
-   "name": "LahoreTrip",
-   "id": "event1234",
-   "eventDetailList": [
+   "evenID": "event1234",
+   "name": "Lahore Trip",
+   "eventType": "Trip",
+   "startDate": "2015/05/18 00:00:00",
+   "endDate": "2015/05/18 00:00:00",
+   "city": "Lahore",
+   "venue": "Horizon Tours Model Town Lahore",
+   "charges": 1000,
+   "status": "NEW",
+   "submittedBy": "user1234",
+   "eventDetailsDaywise": [
       {
-         "id": "event1234",
-         "eventDetailsDaywise": [
-            {
-               "destinationsList": [
-                  "LahoreFort",
-                  "Minar Pakistan",
-                  "Lahore Zoo"
-               ],
-               "pickUptimesList": [
-                  "10am",
-                  "12pm",
-                  "4pm"
-               ],
-               "stayTimesList": [
-                  "2 hours",
-                  "2 hours",
-                  "4 hours"
-               ]
-            },
-            {
-               "destinationsList": [
-                  "LahoreFort",
-                  "Minar Pakistan",
-                  "Lahore Zoo"
-               ],
-               "pickUptimesList": [
-                  "10am",
-                  "12pm",
-                  "4pm"
-               ],
-               "stayTimesList": [
-                  "2 hours",
-                  "2 hours",
-                  "4 hours"
-               ]
-            }
+         "isBreakfast": "1",
+         "isLunch": "1",
+         "isDinner": "1",
+         "destinationsList": [
+            "Lahore Fort",
+            "Minar Pakistan",
+            "Lahore Zoo"
+         ],
+         "pickUptimesList": [
+            "10am",
+            "12pm",
+            "4pm"
+         ],
+         "stayTimesList": [
+            "2 hours",
+            "2 hours",
+            "4 hours"
          ]
       },
       {
-         "id": "event1234",
-         "eventDetailsDaywise": [
-            {
-               "destinationsList": [
-                  "LahoreFort",
-                  "Minar Pakistan",
-                  "Lahore Zoo"
-               ],
-               "pickUptimesList": [
-                  "10am",
-                  "12pm",
-                  "4pm"
-               ],
-               "stayTimesList": [
-                  "2 hours",
-                  "2 hours",
-                  "4 hours"
-               ]
-            },
-            {
-               "destinationsList": [
-                  "LahoreFort",
-                  "Minar Pakistan",
-                  "Lahore Zoo"
-               ],
-               "pickUptimesList": [
-                  "10am",
-                  "12pm",
-                  "4pm"
-               ],
-               "stayTimesList": [
-                  "2 hours",
-                  "2 hours",
-                  "4 hours"
-               ]
-            }
+         "isBreakfast": "1",
+         "isLunch": "0",
+         "isDinner": "1",
+         "destinationsList": [
+            "Model Town Park",
+            "Safari Park",
+            "Expo Center"
+         ],
+         "pickUptimesList": [
+            "9am",
+            "11pm",
+            "5pm"
+         ],
+         "stayTimesList": [
+            "4 hours",
+            "6 hours",
+            "1 hours"
          ]
       }
    ]

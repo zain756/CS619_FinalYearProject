@@ -1,15 +1,23 @@
 <?php
-	class EventDetail{
+	class EventDetailDaywise{
 		private $eventID;
-		private $destinationsList
-		private $pickUpTimesList;
-		private $stayTimesList;
+		public $eventDay;
+		public $destinationsList;
+		public $pickUpTimesList;
+		public $stayTimesList;
+		public $isBreakfast;
+		public $isLunch;
+		public $isDinner;
 		
-		function __construct (){
-			$this->eventID = $eventID;
-			$this->destinationsList = new Array();
-			$this->pickUpTimesList = new Array();
-			$this->stayTimesList = new Array();
+		function __construct ($id, $eventDay, $destList, $pickList, $stayList,$isB, $isL, $isD){
+			$this->eventID = $id;
+			$this->eventDay = $eventDay;
+			$this->destinationsList = $destList;
+			$this->pickUpTimesList = $pickList;
+			$this->stayTimesList = $stayList;
+			$this->isBreakfast = $isB;
+			$this->isDinner = $isD;
+			$this->isLunch = $isL;
 			
 		}
 		
@@ -21,9 +29,7 @@
 			$this->destinationsList[] = $dest;
 		} 
 		
-		public function setDestinationsList ($dest){
-			$this->destinationsList[] = $dest;
-		}
+		
         public function setpickUpTimesList ($time){
 			$this->pickUpTimesList[] = $time;
 		}		
@@ -34,9 +40,7 @@
 			return $this->destinationsList;
 		} 
 		
-		public function getDestinationsList (){
-			return $this->destinationsList;
-		}
+		
         public function getpickUpTimesList (){
 			return $this->pickUpTimesList;
 		}		
